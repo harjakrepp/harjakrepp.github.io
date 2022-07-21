@@ -325,10 +325,10 @@
 		}
 		.aboutweb h2 {
 			margin: 0;
-			border: 2px solid #1F62FF;
+			border: 2px solid cyan;
 			padding: 4px;
 			font-family: roman;
-			background: #454545;
+			background: black;
 			color: white;
 		}
 		.aboutweb p {
