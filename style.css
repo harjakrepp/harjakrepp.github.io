@@ -1,0 +1,597 @@
+/*CSS by HarJa*/
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+			background-image: url(res/pict/neon-bg.jpeg);
+			background-size: cover;
+			color: #000000;
+			margin: 3px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+			height: 616%;
+			padding: 0%;
+			background-image: url('res/pict/transparent.png');
+		}
+		.header {
+			width: 99%;
+			height: 11vh;
+			padding: 2px;
+			background-image: url(res/pict/header.jpeg);
+			background-size: cover;
+			color: white;
+		}
+		.header h2 {
+			width: 23vh;
+			margin-top: 1vh;
+			margin-bottom: 2px;
+			border-bottom: 2px solid maroon;
+			font-size: 25px;
+			font-family: fakehope;
+			font-weight: bold;
+			color: #00D0FF;
+		}
+		.header h5 {
+			width: 14vh;
+			margin: 0;
+			padding: 0;
+			font-family: ds-digital;
+			font-size: 14px;
+			color: white;
+			animation: ergebe 3s ease infinite forwards;
+		}
+		.header .header-menu {
+			display: flex;
+		}
+		.dropdown {
+			position: relative;
+			display: block;
+		}
+		.dropbtn {
+			margin: 0vh 1vh 2px 226px;
+			width: 38px;
+			height: 38px;
+			background: #0A004D;
+			color: white;
+			padding: 5px;
+			font-size: 2vh;
+			text-align: center;
+			border: 2px solid cyan;
+			border-radius: 50%;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			text-align: right;
+			width: 6vh;
+			height: 40vh;
+			margin: 4vh 1vh 2px 223px;
+			border: 2px solid cyan;
+			border-radius: 40px;
+			background: #0A004D;
+			color:cyan;
+			animation: dropdown-menu 0.5s ease 1 forwards;
+		}
+		.dropdown-content a {
+			text-align: center;
+			display: block;
+			width: 3vh;
+			height: 3vh;
+			font-family: roman;
+			color: cyan;
+			margin: 2vh 6px 2vh 3px;
+			border: none;
+			border-radius: 50%;
+			padding: 8px;
+			font-size: 6px;
+			font-weight: bold;
+			text-decoration: none;
+			animation: fade-menu 2s ease 1 forwards;
+		}
+		.dropdown-content a i {
+			text-align: center;
+			font-size: 18px;
+			animation: fade-menu 2s ease 1 forwards;
+		}
+		.dropdown-content a:hover {background:royalblue}
+		.dropdown:hover .dropdown-content {display:block}
+		.dropdown:hover .dropbtn {background:maroon}
+		.runningtext marquee {
+			padding: 2px;
+			background: royalblue;
+			color: white;
+			font-family: ds-digital;
+		}
+		.welcome {
+			margin: auto;
+			margin-top: 3vh;
+			width: 45vh;
+			height: 70vh;
+			text-align: center;
+			opacity: 1;
+			color: white;
+			border-radius: 10px;
+			padding: 0px;
+			animation: favcolor 5s ease infinite forwards;
+		}
+		#digital-clock {
+			text-align: center;
+			margin: 0px 16vh 0px 16vh;
+			border: 2px solid cyan;
+			border-top: 0px;
+			padding: 4px;
+			font-family: ds-digital;
+			color: cyan;
+			animation: favcolor1 5s ease infinite forwards;
+		}
+		.welcome img {
+			margin-top: 6vh;
+			width: 28vh;
+			height: 28vh;
+		}
+		.welcome h4 {
+			font-family: source code;
+			font-size: 5vh;
+			margin-top: 18vh;
+			margin-bottom: 1px;
+			border: 0px;
+			padding: 2px;
+			letter-spacing: 20px;
+			animation: letter-fade 3s ease 1 forwards;
+		}
+		.welcome p {
+			margin-top: 2px;
+			font-family: altona;
+			animation: text-fade 4s ease 1;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 25vh;
+			margin-bottom: 1vh;
+			font-size: 4vh;
+			color: white;
+			font-family: altona;
+			animation: text-fade 3s ease 1 forwards;
+		}
+		.aboutme {
+			margin: 4px 6vh 25vh 6vh;
+			border: 1px solid cyan;
+			background: #01005A;
+			color: white;
+			text-align: center;
+			box-shadow: 0px 0px 4px 2px rgba(0, 200, 255, 2);
+		}
+		.aboutme img {
+			width: 10vh;
+			height: 10vh;
+			margin-top: 3vh;
+			margin-bottom: 2px;
+			border: 1px solid skyblue;
+			border-radius: 50%;
+			animation: bot-fade 2s ease 1 forwards;
+		}
+		.aboutme h3 {
+			font-family: buba;
+			letter-spacing: 2px;
+			font-size: 16px;
+			animation: title-long-fade 3s ease 1;
+		}
+		.aboutme p {
+			margin: 2vh;
+			font-family: roman;
+			font-size: 12px;
+			animation: long-fade 5s ease 1;
+		}
+		.hobbies {
+			text-align: center;
+			margin: 5px;
+		}
+		.hobbies fieldset {
+			border: 2px solid cyan;
+			border-radius: 6vh;
+			margin: 8px;
+		}
+		.hobbies h3 {
+			font-family: buba;
+			letter-spacing: 2px;
+			font-size: 3vh;
+			color: white;
+		}
+		.hobbies .coding {
+			margin-left: 5vh;
+			margin-right: 5vh;
+			margin-bottom: 3vh;
+			border: 1px solid royalblue;
+			border-radius: 10px;
+			padding: 2vh;
+			background: #040050;
+		}
+		.hobbies .rubik {
+			margin-left: 5vh;
+			margin-right: 5vh;
+			margin-bottom: 3vh;
+			border: 1px solid royalblue;
+			border-radius: 10px;
+			padding: 2vh;
+			background: #040050;
+		}
+		.hobbies .game {
+			margin-left: 5vh;
+			margin-right: 5vh;
+			margin-bottom: 3vh;
+			border: 1px solid royalblue;
+			border-radius: 10px;
+			padding: 2vh;
+			background: #040050;
+		}
+		.hobbies .watch {
+			margin-left: 5vh;
+			margin-right: 5vh;
+			margin-bottom: 3vh;
+			border: 1px solid royalblue;
+			border-radius: 10px;
+			padding: 2vh;
+			background: #040050;
+		}
+		.hobbies .music {
+			margin-left: 5vh;
+			margin-right: 5vh;
+			margin-bottom: 3vh;
+			border: 1px solid royalblue;
+			border-radius: 10px;
+			padding: 2vh;
+			background: #040050;
+		}
+		.hobbies img {
+			width: 14vh;
+			height: 14vh;
+			border: 2px;
+			border-radius: 50%;
+		}
+		.hobbies h5 {
+			margin: 2vh;
+			font-family: altona;
+			font-size: 3vh;
+			font-weight: bold;
+			color: cyan;
+		}
+		.hobbies p {
+			text-align: center;
+			font-size: 14px;
+			font-family: altona;
+			color: white;
+		}
+		/*sosmed*/
+		.connect fieldset {
+			margin: 14vh 6vh 14vh 6vh;
+			border: 1px solid cyan;
+			border-radius: 14px 0 14px 0;
+			padding: 6vh 4px 2vh 4px;
+		}
+		.connect legend {
+			font-family: buba;
+			font-size: 3vh;
+			letter-spacing: 2px;
+			color: white;
+			text-align: center;
+		}
+		.connect .sosmed a {
+			text-decoration: none;
+		}
+		.connect .sosmed i {
+			display: inline;
+			background: black;
+			color: white;
+			font-size: 18px;
+			margin: 4px;
+			padding: 6px;
+			border: 1px solid maroon;
+			border-radius: 50%;
+			box-shadow: 0px 4px 8px 0px rgba(0, 200, 255, 2);
+		}
+		.connect .sosmed a:hover {
+			background: black;
+			color: white;
+		}
+		.connect .more-account-dropdown {
+			text-align: center;
+			background:;
+			width: 16vh;
+			height: 6vh;
+			margin: 4vh 0vh 1vh 9.4vh;
+		}
+		.connect .more-account-dropdown .more-account-btn {
+			display: inline-block;
+			margin-top: 4vh;
+			background: #202020;
+			color: cyan;
+		}
+		.connect .more-account-dropdown .more-account-btn:hover {
+			background: maroon;
+			color: cyan;
+		}
+		.connect .more-account-dropdown .more-account-box {
+			display: none;
+			position: absolute;
+			background: #020202;
+			border: 2px double cyan;
+			border-radius: 2px;
+		}
+		.connect .more-account-dropdown .more-account-box a {
+			font-family: altona;
+			display: block;
+			text-align: left;
+			width: 14.5vh;
+			height: 3.5vh;
+			padding: 0.5vh;
+			text-decoration: none;
+			color: cyan;
+			font-size: 2vh;
+		}
+		.connect .more-account-dropdown .more-account-box i {
+			font-size: 2vh;
+			padding: 0px;
+		}
+		.more-account-dropdown:hover .more-account-box {display: block}
+		.my-project fieldset {
+			margin: 1vh 5vh 10vh 5vh;
+			border: 1px solid cyan;
+			border-radius: 8px;
+		}
+		.my-project legend {
+			text-align: left;
+			font-family: buba;
+			color: white;
+		}
+		.my-project table th {
+			padding: 1vh;
+			background: #005BFF;
+			color: white;
+			font-family: roman;
+		}
+		.my-project table td {
+			text-align: center;
+			padding: 1vh;
+			font-family: altona;
+			color: white;
+		}
+		.my-project table td a {
+			text-decoration: none;
+			color: cyan;
+		}
+		.aboutweb {
+			margin: 0px;
+		}
+		.aboutweb h2 {
+			margin: 0 18vh 0 18vh;
+			border: 1px solid skyblue;
+			border-radius: 4px;
+			padding: 0.5vh;
+			font-family: altona;
+			font-size: 2.5vh;
+			background: maroon;
+			color: white;
+		}
+		.aboutweb input {
+			background: #252525;
+			color: cyan;
+			border: 2px 1px 2px 1px;
+			border-radius: 0px 0px 2px 2px;
+			font-family: tommy;
+			animation: ergebe 3s ease infinite forwards;
+		}
+		.support {
+			margin: 3vh;
+		}
+		.support h6 {
+			background: skyblue;
+			font-family: tommy;
+			color: maroon;
+			margin: 0vh 14vh 1vh 14vh;
+			padding: 0.5vh;
+		}
+		.support img {
+			border-radius: 1px;
+			width: 10vh;
+			height: 30px;
+			border: 1px solid skyblue;
+			padding: 1vh 2vh 1vh 2vh;
+		}
+		.footer {
+			margin: 0;
+			border: 0px;
+			padding: 2px;
+			background: #222222;
+			color: white;
+		}
+		.footer h3 {
+			margin: 0;
+			border-bottom: 3px solid royalblue;
+			padding: 4px;
+		}
+		.footer h5 {
+			margin: 12px;
+			font-size: 16px;
+			color: white;
+		}
+		.footer h4 {
+			margin: 1vh;
+			font-family: tommy;
+			color: cyan;
+		}
+		.footer p {
+			margin: 8px;
+			font-size: 14px;
+			font-family: tommy;
+		}
+		.footer a {
+			display: block;
+			text-decoration: none;
+			color: #C7C7C7;
+			font-family: tommy;
+			font-size: 12px;
+			padding: 1px;
+		}
+		.footer .made-with {
+			background: #000045;
+			color: white;
+			margin: 4px;
+			padding: 6px;
+			Font-size: 2vh;
+			box-shadow: 0px 1px 4px 0px rgba(0, 200, 255, 2);
+		}
+		.footer .made-with p {
+			font-weight: bold;
+		}
+		.footer .made-with a {
+			display: inline;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 1vh;
+		}
+		.footer .made-with span {
+			font-size: 10px;
+			font-family: tommy;
+			letter-spacing: 0px;
+		}
+		.copyright p {
+			margin: 1vh 1vh 2vh 1vh;
+			text-align: center;
+			font-size: 14px;
+			font-family: tommy;
+			font-style: italic;
+			color: #C5C5C5;
+		}
+		/*Font*/
+		@font-face {
+			font-family: fakehope;
+			src: url('res/font/FakeHope.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: ds-digital;
+			src: url('res/font/DS-DIGI.TTF') format('truetype');
+		}
+		@font-face {
+			font-family: source code;
+			src: url('res/font/source-code.otf') format('truetype');
+		}
+		@font-face {
+			font-family: roman;
+			src: url('res/font/code-new-roman.otf') format('truetype');
+		}
+		@font-face {
+			font-family: buba;
+			src: url('res/font/buba.otf') format('truetype');
+		}
+		@font-face {
+			font-family: neon;
+			src: url('res/font/neon.otf') format('truetype');
+		}
+		@font-face {
+			font-family: pixel;
+			src: url('res/font/pixel.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: altona;
+			src: url('res/font/altona-sans.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: pink chicken;
+			src: url('res/font/pink_chicken.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: tommy;
+			src: url('res/font/tommy.otf') format('truetype');
+		}
+		@keyframes ergebe {
+			0% {color: red}
+			50% {color: green}
+			100% {color: blue}
+		}
+		@keyframes dropdown-menu {
+			from {opacity: 0; height:0px;}
+			to {opacity: 1; height: 40vh}
+		}
+		@keyframes choose-box {
+			from {background: #0A004D; color: cyan;}
+			to {background: white; color: black;}
+		}
+		@keyframes fade-menu {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+		@keyframes text-fade {
+			0% {opacity: 0;}
+			75% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		@keyframes favcolor {
+			0% {border: 2px solid orange;}
+			25% {border: 2px solid cyan;}
+			50% {border: 2px solid purple;}
+			75% {border: 2px solid red;}
+			100% {border: 2px solid royalblue;}
+		}
+		@keyframes favcolor1 {
+			0% {border: 2px solid orange; border-top: 0px;}
+			25% {border: 2px solid cyan; border-top: 0px;}
+			50% {border: 2px solid purple; border-top: 0px;}
+			75% {border: 2px solid red; border-top: 0px;}
+			100% {border: 2px solid royalblue; border-top: 0px;}
+		}
+		@keyframes letter-fade {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 0;
+				letter-spacing: 20px;
+			}
+			100% {
+				opacity: 1;
+				letter-spacing: 2px;
+				}
+		}
+		@keyframes bot-fade {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+				margin-top: 3vh;
+				margin-bottom: 2px;
+			}
+		}
+		@keyframes title-long-fade {
+			0% {
+				opacity: 0;
+				font-size: 0px;
+			}
+			50% {
+				opacity: 0;
+				font-size: 0px;
+			}
+			100% {
+				opacity: 1;
+				font-size: 16px;
+			}
+		}
+			@keyframes long-fade {
+			0% {
+				opacity: 0;
+				font-size: 0px;
+			}
+			25% {
+				opacity: 0;
+				font-size: 12px;
+			}
+			100% {
+				opacity: 1;
+				font-size: 12px;
+			}
+		}
